@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails heurekafoto: development" uuid="f89b1c8e-9cf7-4ef8-b2c3-4ffa7fb2ab10">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails heurekafoto: test" uuid="32ca2458-ae0a-497c-b602-4ce0d77e80c0">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails heurekafoto: production" uuid="1ad01880-52cf-4774-b660-8f0741518ec7">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
