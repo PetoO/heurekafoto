@@ -1,4 +1,5 @@
 class Camera < ActiveRecord::Base
+  has_many(:offers)
 
   def self.parse_from_heureka(html)
     doc = Nokogiri::HTML.parse(html)
