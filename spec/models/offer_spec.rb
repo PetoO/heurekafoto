@@ -15,7 +15,7 @@ RSpec.describe Offer, :type => :model do
     offer = Offer.first
 
     expect(offer.price).to eq(389.00)
-    expect(offer.shop).to eq('MALL.SK')
+    expect(offer.shop.name).to eq('MALL.SK')
     expect(offer.url).to eq('http://www.heureka.sk/exit/mall-sk/749411912/?z=2&p=1')
   end
 end
