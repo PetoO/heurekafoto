@@ -2,6 +2,7 @@ require 'net/http'
 
 class Offer < ActiveRecord::Base
   belongs_to :camera
+  belongs_to :shop
 
   def self.parse_camera_from_heureka(camera_name)
     parse_url = url_from_name(camera_name)
@@ -13,7 +14,7 @@ class Offer < ActiveRecord::Base
       anchor = div.search('.buy .link').first
       price = div.search('.pr .pricen').text.to_f
       Offer.create!(
-        shop: anchor.text,
+        shop: Shop.find_or_create_by!(name: anchor.text),
         url: anchor[:href],
         price: price
       )
